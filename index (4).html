@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Kontraksi Panjang</title>
+    <link rel="stylesheet" href="simulasikontraksi.css">
+</head>
+<body>
+    <header>
+        <h1>Simulasi Kontraksi Panjang</h1>
+    </header>
+
+    <div class="simulation-container">
+        <div class="simulation">
+            <canvas id="kontraksiCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <label for="speed">Kecepatan (Sebagian dari c):</label>
+                <input type="range" id="speed" min="0" max="100" step="1" value="50">
+                <span id="speedValue">0.5</span> c
+            </div>
+        </div>
+        <div class="description">
+            <h2>Penjelasan Kontraksi Panjang</h2>
+            <p>Kontraksi panjang adalah fenomena relativistik di mana panjang suatu objek yang bergerak dengan kecepatan mendekati kecepatan cahaya (c) akan tampak lebih pendek bagi pengamat yang diam, dibandingkan dengan panjang objek tersebut saat diam.</p>
+            <p>Rumus yang digunakan untuk menghitung kontraksi panjang adalah:</p>
+            <pre>
+                L = L₀ * √(1 - v²/c²)
+            </pre>
+            <p>Dimana L₀ adalah panjang objek saat diam, L adalah panjang objek yang bergerak, v adalah kecepatan objek, dan c adalah kecepatan cahaya.</p>
+        </div>
+        <button onclick="window.location.href='../SIMULASI FISMOD.html'">Kembali ke Halaman Utama</button>
+    </div>
+
+    <footer>
+        <p>Universitas Pendidikan Indonesia</p>
+    </footer>
+
+    <script src="simulasikontraksi.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Efek Doppler</title>
+    <link rel="stylesheet" href="simulasidoppler.css">
+</head>
+<body>
+    <header>
+        <h1>Simulasi Efek Doppler</h1>
+    </header>
+
+    <div class="simulation-container">
+        <div class="simulation">
+            <canvas id="dopplerCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <label for="speed">Kecepatan Sumber:</label>
+                <input type="range" id="speed" min="0" max="10" step="0.1" value="5">
+                <span id="speedValue">5</span> m/s
+            </div>
+            <div class="controls">
+                <label for="wavelength">Panjang Gelombang:</label>
+                <input type="range" id="wavelength" min="100" max="600" step="10" value="300">
+                <span id="wavelengthValue">300</span> nm
+            </div>
+        </div>
+        <div class="description">
+            <h2>Penjelasan Efek Doppler</h2>
+            <p>Efek Doppler adalah perubahan frekuensi atau panjang gelombang gelombang (seperti suara atau cahaya) yang diterima oleh pengamat, yang disebabkan oleh pergerakan sumber gelombang atau pengamat itu sendiri. 
+            <br><br>
+            Ketika sumber bergerak mendekati pengamat, gelombang akan terkompresi, menghasilkan peningkatan frekuensi (warna biru pada cahaya). Sebaliknya, ketika sumber bergerak menjauh, gelombang akan memanjang, menghasilkan penurunan frekuensi (warna merah pada cahaya).</p>
+        </div>
+        <button onclick="window.location.href='../SIMULASI FISMOD.html'">Kembali ke Halaman Utama</button>
+    </div>
+
+    <footer>
+        <p>Universitas Pendidikan Indonesia</p>
+    </footer>
+
+    <script src="simulasidoppler.js"></script>
+</body>
+</html>

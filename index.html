@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Aberasi Cahaya</title>
+    <link rel="stylesheet" href="simulasiabersicahaya.css">
+</head>
+<body>
+    <header>
+        <h1>Simulasi Aberasi Cahaya</h1>
+    </header>
+
+    <div class="simulation-container">
+        <div class="simulation">
+            <canvas id="abersiCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <label for="speed">Kecepatan (Sebagian dari c):</label>
+                <input type="range" id="speed" min="0" max="100" step="1" value="50">
+                <span id="speedValue">0.5</span> c
+            </div>
+        </div>
+        <div class="description">
+            <h2>Penjelasan Aberasi Cahaya</h2>
+            <p>Aberasi cahaya adalah fenomena relativistik yang mengakibatkan cahaya dari bintang tampak bergeser saat pengamat bergerak dengan kecepatan tinggi. Ini terjadi karena cahaya tampak datang dari arah yang lebih terarah ketika pengamat bergerak dengan kecepatan mendekati kecepatan cahaya.</p>
+            <p>Rumus untuk menghitung sudut aberasi adalah:</p>
+            <pre>
+                θ = arctan(v / c)
+            </pre>
+            <p>Dimana θ adalah sudut aberasi, v adalah kecepatan pengamat, dan c adalah kecepatan cahaya.</p>
+        </div>
+        <button onclick="window.location.href='../index.html'">Kembali ke Halaman Utama</button>
+    </div>
+
+    <footer>
+        <p>Universitas Pendidikan Indonesia</p>
+    </footer>
+
+    <script src="simulasiabersicahaya.js"></script>
+</body>
+</html>

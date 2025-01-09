@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Dilatasi Waktu</title>
+    <link rel="stylesheet" href="simulasidilatasi.css">
+</head>
+<body>
+    <header>
+        <h1>Simulasi Dilatasi Waktu</h1>
+    </header>
+
+    <div class="simulation-container">
+        <div class="simulation">
+            <canvas id="dilatasiCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <label for="speed">Kecepatan (Sebagian dari c):</label>
+                <input type="range" id="speed" min="0" max="100" step="1" value="50">
+                <span id="speedValue">0.5</span> c
+            </div>
+        </div>
+        <div class="description">
+            <h2>Penjelasan Dilatasi Waktu</h2>
+            <p>Dilatasi waktu adalah fenomena relativistik di mana waktu yang dialami oleh seorang pengamat yang bergerak dengan kecepatan mendekati kecepatan cahaya (c) akan lebih lambat dibandingkan dengan waktu yang dialami oleh pengamat yang diam.</p>
+            <p>Dalam simulasi ini, Anda dapat melihat perbedaan antara waktu yang dialami oleh pengamat yang bergerak dengan kecepatan yang berbeda, yang dihitung menggunakan rumus dilatasi waktu dari relativitas khusus:</p>
+            <pre>
+                Δt' = Δt / √(1 - v²/c²)
+            </pre>
+            <p>Semakin besar kecepatan, semakin lambat waktu yang dialami oleh pengamat yang bergerak.</p>
+        </div>
+        <button onclick="window.location.href='../SIMULASI FISMOD.html'">Kembali ke Halaman Utama</button>
+    </div>
+
+    <footer>
+        <p>Universitas Pendidikan Indonesia</p>
+    </footer>
+
+    <script src="simulasidilatasi.js"></script>
+</body>
+</html>
